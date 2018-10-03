@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="app.js">
+
+</script>
+</head>
+
+<body>
+
+<header id="header">
+<div id="top">
+<img src="images/logo.png" alt="">
+<div id="search">
+<input type="text" placeholder="Bạn cần tìm gì...?">
+<button><i class="fas fa-search"></i></button>
+
+</div>
+<span id="email"><i class="far fa-envelope"></i>&nbsp; EMAIL</span>
+<span id="time"><i class="far fa-clock"></i>&nbsp; 08:00 - 20:00</span>
+<span id="phone"><i class="fas fa-phone" fa-flip-horizontal></i>  &nbsp;1900636594</span>
+<button id="login" onclick="document.getElementById('modal-wrapper').style.display='block'">
+ĐĂNG NHẬP</button>
+
+<div id="cart">0
+<div id="cart-handle"></div>
+<div id="cart-info" class="callouts">Chưa có sản phẩm trong giỏ hàng.</div>
+</div>
+
+</div>
+<nav>
+
+<ul>
+<li><a href="#">ĐIỆN THOẠI &nbsp;<i class="fas fa-chevron-down"></i></a>
+<ul>
+
+<li><a href="#">IPHONE</a></li>
+<li><a href="#">IPHONE XS/XS MAX/XR</a></li>
+<li><a href="#">IPHONE 8/8 PLUS/X</a></li>
+<li><a href="#">IPHONE 7/7 PLUS</a></li>
+<li><a href="#">IPHONE 6S/6S PLUS</a></li>
+<li><a href="#">IPHONE 6/6 PLUS</a></li>
+<li><a href="#">IPHONE 5/5S/SE</a></li>
+<li><a href="#">SAMSUNG</a></li>
+<li><a href="#">XIAOMI</a></li>
+<li><a href="#">LG</a></li>
+<li><a href="#">SONY</a></li>
+<li class="callouts"></li>
+</ul>
+</li>
+<li><a href="#">IPAD</a></li>
+<li><a href="#">PHỤ KIỆN</a></li>
+<li><a href="#">ASMART CARE</a></li>
+<li><a href="#">KHUYẾN MÃI</a></li>
+<li><a href="#">QUY ĐỊNH BẢO HÀNH</a></li>
+<li><a href="#">TRẢ GÓP</a></li>
+<li><a href="#">TIN TỨC</a></li>
+<li><a href="#">LIÊN HỆ</a></li>
+
+</ul>
+
+</nav>
+</header>
+<div id="container" >
+<main>
+<section id="main1" class="clr">
+
+<!-- #region Jssor Slider Begin -->
+
+
+
+<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:500px;overflow:hidden;visibility:hidden; grid-area: slider;">
+<!-- Loading Screen -->
+<div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+</div>
+<div id="slider" data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:960px;height:500px;overflow:hidden; ">
+<div>
+      <img data-u="image" src="img/001.jpg" />
+</div>
+<div>
+      <img data-u="image" src="img/002.jpg" />
+</div>
+<div>
+      <img data-u="image" src="img/003.jpg" />
+</div>
+<div>
+      <img data-u="image" src="img/004.jpg" />
+</div>
+<div>
+      <img data-u="image" src="img/005.jpg" />
+</div>
+
+</div>
+<!-- Bullet Navigator -->
+<div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+<div data-u="prototype" class="i" style="width:16px;height:16px;">
+      <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+      </svg>
+</div>
+</div>
+<!-- Arrow Navigator -->
+<div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+      <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+</svg>
+</div>
+<div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+      <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+</svg>
+</div>
+</div>
+<!-- #endregion Jssor Slider End -->
+
+<div id="img1"></div>
+<div id="img2"></div>
+</section>
+<section id="main2">
+<img id="ads1" src="images/ads1.jpg" alt="" class="ads">
+<img id="ads2" src="images/ads2.jpg" alt="" class="ads">
+<img id="ads5" src="images/ads5.jpg" alt="" class="ads">
+</section>
+</main>
+<div class="title">
+      <span class="title"><i class="fas fa-gift"></i> SẢN PHẨM ĐANG KHUYẾN MÃI</span></div>
+<section id="main3">
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/Samsung-Galaxy-S7-quoc-te-2sim-black-247x300.jpg" alt="">
+            <div class="company">SAMSUNG</div>
+            <div class="prod-name"><a href="#">Samsung Galaxy S7 Quốc Tế QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">4,990,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price"> 4,690,000₫</span></span>
+            
+      </div>
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/Samsung-Galaxy-Note-8-quoc-te-2sim-Maple-Gold-asmart-da-nang-247x300.jpg" alt="">
+            <div class="company">SAMSUNG</div>
+            <div class="prod-name"><a href="#">Samsung Galaxy Note 8 Hàn QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">11,990,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">11,290,000₫</span></span>
+            
+      </div>
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/Sony-XZ-Blue-asmart-da-nang-247x300.jpg" alt="">
+            <div class="company">SONY</div>
+            <div class="prod-name"><a href="#">Sony Xperia XZ QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">4,290,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">3,990,000₫</span></span>
+            
+      </div>
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/prod5.jpg" alt="">
+            <div class="company">APPLE</div>
+            <div class="prod-name"><a href="#">iPhone 7 32GB QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">11,990,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">11,290,000₫</span></span>
+            
+      </div>
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/Sony-X-Performance-Black-asmart-da-nang-247x300.jpg" alt="">
+            <div class="company">Sony</div>
+            <div class="prod-name"><a href="#">Sony Xperia X Performance QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">11,990,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">11,290,000₫</span></span>
+            
+      </div>
+</section>
+<section id="main4">
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/prod1.jpg" alt="">
+            <div class="company">APPLE</div>
+            <div class="prod-name"><a href="#">Apple Watch Series 3 LTE 42mm</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">7,990,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">7,490,000₫</span></span>
+            
+      </div>
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/prod12.jpg" alt="">
+            <div class="company">Apple</div>
+            <div class="prod-name"><a href="#">iPhone X 64GB Chưa Active TBH</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">20,490,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">19,990,000₫</span></span>
+            
+      </div>
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/prod11.jpg" alt="">
+            <div class="company">APPLE</div>
+            <div class="prod-name"><a href="#">iPhone 7 Plus 128GB QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">11,990,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">11,290,000₫</span></span>
+            
+      </div>
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/prod12.jpg" alt="">
+            <div class="company">APPLE</div>
+            <div class="prod-name"><a href="#">iPhone 7 Lock 128GB QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">11,990,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">11,290,000₫</span></span>
+            
+      </div>
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/prod15.jpg" alt="">
+            <div class="company">LG</div>
+            <div class="prod-name"><a href="#">LG G6 QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">4,290,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price"> 3,790,000₫</span></span>
+            
+      </div>
+                  
+</section>
+
+</div>
+<div class="title" id="hot-prod">
+      <span class="title"><i class="fas fa-star"></i> SẢN PHẨM HOT</span></div>
+<section id="main5">
+
+        <style>
+    
+
+        </style>
+        <div id="jssor_2">
+
+            <div data-u="loading" class="jssorl-009-spin" >
+                <img style="margin-top:-19px;position:relative;top:50%;width:70px;height:120px;" src="img/spin.svg" />
+            </div>
+<div id="slide" data-u="slides" >
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/prod1.jpg" alt="">
+            <div class="company">SAMSUNG</div>
+            <div class="prod-name"><a href="#">Samsung Galaxy Note 8 Hàn QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">11,990,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">11,290,000₫</span></span>
+            
+      </div>
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/prod2.jpg" alt="">
+            <div class="company">SAMSUNG</div>
+            <div class="prod-name"><a href="#">Samsung Galaxy Note 8 Hàn QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">11,990,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">11,290,000₫</span></span>
+            
+      </div>
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/prod3.jpg" alt="">
+            <div class="company">SAMSUNG</div>
+            <div class="prod-name"><a href="#">Samsung Galaxy Note 8 Hàn QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">11,990,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">11,290,000₫</span></span>
+            
+      </div>
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/prod4.jpg" alt="">
+            <div class="company">SAMSUNG</div>
+            <div class="prod-name"><a href="#">Samsung Galaxy Note 8 Hàn QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">11,990,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">11,290,000₫</span></span>
+            
+      </div>
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/prod5.jpg" alt="">
+            <div class="company">SAMSUNG</div>
+            <div class="prod-name"><a href="#">Samsung Galaxy Note 8 Hàn QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">11,990,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">11,290,000₫</span></span>
+            
+      </div>
+
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/prod6.jpg" alt="">
+            <div class="company">SAMSUNG</div>
+            <div class="prod-name"><a href="#">Samsung Galaxy Note 8 Hàn QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">11,990,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">11,290,000₫</span></span>
+            
+      </div>
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/prod7.jpg" alt="">
+            <div class="company">SAMSUNG</div>
+            <div class="prod-name"><a href="#">Samsung Galaxy Note 8 Hàn QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">11,990,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">11,290,000₫</span></span>
+            
+      </div>
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/prod8.jpg" alt="">
+            <div class="company">SAMSUNG</div>
+            <div class="prod-name"><a href="#">Samsung Galaxy Note 8 Hàn QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">11,990,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">11,290,000₫</span></span>
+            
+      </div>
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/prod9.jpg" alt="">
+            <div class="company">SAMSUNG</div>
+            <div class="prod-name"><a href="#">Samsung Galaxy Note 8 Hàn QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">11,990,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">11,290,000₫</span></span>
+            
+      </div>
+      <div class="card">
+            <div class="sale">7%</div>
+            <img src="images/prod10.jpg" alt="">
+            <div class="company">SAMSUNG</div>
+            <div class="prod-name"><a href="#">Samsung Galaxy Note 8 Hàn QSD</a></div>
+            <span class="from-old">Giá từ: <span class="old-price">11,990,000₫</span></span><br>
+            <span class="from-new">Giá từ: <span class="new-price">11,290,000₫</span></span>
+            
+      </div>
+            </div>
+
+
+
+            <div data-u="arrowleft" class="jssora073" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <path class="a" d="M4037.7,8357.3l5891.8,5891.8c100.6,100.6,219.7,150.9,357.3,150.9s256.7-50.3,357.3-150.9 l1318.1-1318.1c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3L7745.9,8000l4216.4-4216.4 c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3l-1318.1-1318.1c-100.6-100.6-219.7-150.9-357.3-150.9 s-256.7,50.3-357.3,150.9L4037.7,7642.7c-100.6,100.6-150.9,219.7-150.9,357.3C3886.8,8137.6,3937.1,8256.7,4037.7,8357.3 L4037.7,8357.3z"></path>
+                </svg>
+            </div>
+            <div data-u="arrowright" class="jssora073" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <path class="a" d="M11962.3,8357.3l-5891.8,5891.8c-100.6,100.6-219.7,150.9-357.3,150.9s-256.7-50.3-357.3-150.9 L4037.7,12931c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3L8254.1,8000L4037.7,3783.6 c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3l1318.1-1318.1c100.6-100.6,219.7-150.9,357.3-150.9 s256.7,50.3,357.3,150.9l5891.8,5891.8c100.6,100.6,150.9,219.7,150.9,357.3C12113.2,8137.6,12062.9,8256.7,11962.3,8357.3 L11962.3,8357.3z"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- #endregion Jssor Slider End -->
+</section>
+
+<div id="modal-wrapper" class="modal">
+
+<form class="modal-content animate" >
+
+<div class="imgcontainer">
+
+<h3>ĐĂNG NHẬP</h3>
+</div>
+
+<h4>Tên tài khoản hoặc địa chỉ email *</h4>
+<input type="text" placeholder="Enter Username" name="uname">
+<h4>Mật khẩu *</h4>
+<input type="password" placeholder="Enter Password" name="psw">
+<button type="submit">ĐĂNG NHẬP</button>
+<input type="checkbox" style="margin:26px 30px;">
+<h4>Ghi nhớ mật khẩu</h4>
+<a href="#" style="text-decoration:none; display: block; margin-top:20px; color: #446084">Quên mật khẩu?</a>
+
+
+</form>
+<script>
+      var modal = document.getElementById('modal-wrapper');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+            }
+      }
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    document.getElementById("header").style.position = "fixed";
+    document.getElementById("header").style.top = "0px";
+        document.getElementById("container").style.marginTop='120px';
+  } else {
+    document.getElementById("header").style.position = "relative";
+      document.getElementById("container").style.marginTop='20px';
+  }
+}
+
+</script>
+</div>
+
+
+
+
+</body>
+
+</html>
