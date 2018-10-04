@@ -245,13 +245,13 @@ nav ul li:hover ul{
       background-position: center;
 }
 #img1{
-      background: url('images/ads3.jpg');
+      background: url('images/hinh3.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       grid-area: img1;
 }
 #img2{
-      background: url('images/ads4.jpg'); background-size: cover;
+      background: url('images/hinh4.jpg'); background-size: cover;
       background-repeat: no-repeat;   
       grid-area: img2;
 }
