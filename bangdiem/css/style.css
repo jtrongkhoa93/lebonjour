@@ -1,0 +1,67 @@
+/* Submit form----------------- */
+
+.container{
+      width: 60%;
+      background:white;
+      font-weight: bold;
+      padding: 10% 10%;
+      margin: 0% 10%;
+      font-size: 1.1em;
+      color:black;
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-seriff;
+
+}
+
+input{
+width: 80%;
+height: 60%;
+align-items: center;
+border: none;
+text-align: center;
+border-style: inset
+}
+table, th, td{
+      margin: 0px;
+      border: 1px solid #88d1ff;
+      padding: 1px;
+      text-align: center;
+}
+table{
+      border-collapse: collapse;
+    width: 100%; 
+}
+th, td{
+width: 80px;
+height: 40px;
+max-height: 20%;
+max-width: 20%;
+border:1px solid #ddd;
+padding: 1px;
+}
+
+th{
+      padding:12px 0px;
+      background-color: #4CAF50;
+      color:white;
+}
+
+
+caption{
+margin: 20px;
+      text-decoration: underline;
+}       
+table>tr>td{
+border: none;
+color: white;
+cellspacing:"0.4";
+cellpadding:"30"
+}
+#the_1{
+    width: 50%;
+    border-style: 1px solid black;
+}
+
+body {
+      background: #53a5d8
+}
+

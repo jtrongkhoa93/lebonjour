@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <style type="text/css" src="./css/popup.css">
+*{margin: 0px; padding: 0px; font-family:Arial, Helvetica, sans-serif;}
+
+input[type=text],input[type=password]{ /* Full-width input fields*/
+      width:90%;
+      padding: 12px 20px;
+      margin: 8px 26px;
+      display: inline-block;
+      font-size: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ccc}
+          
+h2{
+      text-align: center;
+      font-size: 50px;
+      color: black;
+}
+button { /*Set a style for all button*/
+      background-color: #4CAF50;
+      border: none;
+      margin: 8px 26px;
+      padding: 14px 20px;
+      font-size: 20px;
+      width: 90%;
+      color: white;
+      cursor: pointer;
+      border-radius: 10px;
+}
+button:hover{
+      opacity: .8;
+}
+#trigger{
+      width: 200px;
+      margin-left:200px;
+      margin-top: 160px;
+}
+.imgcontainer{
+      text-align: center;
+      position: relative;
+      margin: 24px 0 12px 0;
+}
+#avatar{
+      width:200px;
+      height:200px;
+
+}
+.close{
+      position: absolute;
+      right: 25px;
+      top:0px;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+.modal{           /*The modal(background)*/
+      display: none;
+      position: fixed;
+      z-index:1;
+      left:0;
+      top:0;
+      width:100%;
+      height:100%;
+      overflow: auto;
+      
+      background-color: rgba(0,0,0,0.4);
+}
+form{
+    border-radius: 10px;
+}
+.modal-content{    /*Modal - content box*/
+      background-color: #fefefe;
+      width:40%;
+      margin:4% auto 15% auto;
+      border: 1px solid #888;
+      padding-bottom: 30px;
+}
+.animate{
+      animation: zoom 0.4s
+}
+@keyframes zoom{
+      from {transform: scale(0)}
+      to {transform: scale(1)}
+}
+</style>
+<script type="text/javascript" src="js/app.js">
+
+</script>
+</head>
+
+<body>
+
+<button id="trigger" onclick="document.getElementById('modal-wrapper').style.display='block'">Open Popup</button>
+
+    <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span class="close" title="Close Popup" onclick="document.getElementById('modal-wrapper').style.display='none'" >&times;</span>
+                
+                <img src="./images/ava.png" alt="Avatar" id="avatar">
+                <h2>Login please</h2>
+            </div>
+           
+            <input type="text" id="username" placeholder="Enter Username" name="uname">
+            <input type="password" id="password" placeholder="Enter Username" name="psw">
+            <button id="login" type="submit" onclick="return false">Login</button>
+            <input type="checkbox" style="margin: 26px 30px;">
+            Remember me
+            <a href="#" style="text-decoration: none; float:right; margin-right:34px; margin-top:26px;">Forgot password?</a>
+        </form>
+        </div>
+
+    </body>
+
+</html>
