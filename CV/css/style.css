@@ -12,6 +12,7 @@
 }
 body, html{
       height:4400px;
+      overflow: hidden;
 }
 a, ul{
       text-decoration: none;
@@ -52,10 +53,8 @@ aside {
       filter: blur(12px);
 }
 #container{
-      height: 2000px;
       background-size: contain;
       background-repeat: no-repeat;
-      overflow: auto;
       position: absolute;
 
 }
@@ -65,7 +64,7 @@ h2{
 }
 i{
       font-size: 2rem;
-      transition: font-size 0.3s ease-in-out, height 0.3s linear, color 0.5s linear;
+      transition: font-size 0.5s ease-in-out, height 0.5s linear, color 0.7s linear;
       color: #f8f8f8;
       text-shadow: 0 0 10px #0095ff;
 }
@@ -88,6 +87,9 @@ i{
       position: relative;
       padding-top: 100px;
       
+}
+.scroll>*{
+      display:none;
 }
 .scroll img{
       width: 60%;
