@@ -88,9 +88,11 @@ i{
       padding-top: 100px;
       
 }
+/*
 .scroll>*{
       display:none;
 }
+*/
 .scroll img{
       width: 60%;
       float:right;
