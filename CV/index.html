@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+      <link rel="stylesheet" href="css/style.css">
+      
+<!--      <script src="js/jquery-3.3.1.min.js"></script>-->
+      <script language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+</head>
+<body>
+     <div id="background">
+           
+     </div>
+      
+            <header>
+          <h1>Do Trong Khoa's Portfolio</h1>
+    </header>
+     <aside>
+           <a href="#home" id="link1" class="nav"><i class="fas fa-user-circle glow"></i></a>
+           <div class="stripe"></div>
+           <a href="#skill" id="link2" class="nav"><i class="fas fa-chart-bar glow"></i></a>
+           <div class="stripe"></div>
+           <a href="#education" id="link3" class="nav"><i class="fas fa-graduation-cap glow"></i></a>
+           <div class="stripe"></div>
+           <a href="#experience" id="link4" class="nav"><i class="fas fa-briefcase glow"></i></a>
+           <div class="stripe"></div>
+           <a href="#contact" id="link5" class="nav"><i class="fas fa-address-card glow"></i></a>
+     </aside>
+     <div id="container">
+      <section class="scroll" id="home">
+            <h2 class="title">
+                  Khoa Do
+            </h2>
+            <div class="content">
+                  
+            </div>
+            <img src="images/il_fullxfull.1176017278_obss_1280x1280.jpg" alt="">
+      </section>      
+           <section class="scroll" id="skill">
+            <h2 class="title">
+                  Skills
+            </h2>
+            <div class="content">
+                  
+            </div>
+            <img src="images/AdobeStock_122249734.jpg" alt="">
+      </section>      
+           <section class="scroll" id="education">
+            <h2 class="title">
+                  Educations
+            </h2>
+            <div class="content">
+                  
+            </div>
+            <img src="images/Hippopx%20(1).jpg" alt="">
+      </section>      
+           <section class="scroll" id="experience">
+            <h2 class="title">
+                  Working experiences and Projects
+            </h2>
+            <div class="content">
+                  
+            </div>
+            <img src="images/36903179_2066221096951474_8829633036002787328_n.jpg" alt="">
+      </section>      
+           <section class="scroll" id="contact">
+            <h2 class="title">
+                  Contact Me:
+            </h2>
+            <div class="content">
+                  
+            </div>
+            <img src="images/Hippopx.jpg" alt="">
+      </section>
+      </div>
+
+<script>
+      $(document).ready(function() {
+  var flag='home';
+            
+  $("a[href*='#']:not([href='#])").click(function() {
+  let target = $(this).attr("href");
+  $('body,html').stop().animate({
+    scrollTop: $(target).offset().top
+  }, 700);
+  event.preventDefault();
+});
+   //Active link switching
+  $(window).scroll(function() {
+    var scrollbarLocation = $(this).scrollTop();
+//        console.log(scrollbarLocation);
+    var scrollLink = $('.nav');
+    scrollLink.each(function() {
+      
+      var sectionOffset = $(this.hash).offset().top - 20;
+      
+      if ( sectionOffset <= scrollbarLocation +300) {
+//            console.log(sectionOffset);
+        $(this).children().addClass('active');
+        $(this).siblings().children().removeClass('active');
+            flag=this.hash;
+            console.log(flag);
+      }
+    })
+
+  })
+//      var scrollPos = 0;
+//    $(window).scroll(function(){
+//          let current=$(".active:nth-child(0)");
+//          
+//        var scrollPosCur = $(this).scrollTop();
+//        if (scrollPosCur > scrollPos) {
+//          $('body,html').stop().animate({
+//    scrollTop: $(current).offset().top
+//  }, 700);
+//  event.preventDefault();
+//        }
+//        scrollPos = scrollPosCur;
+//
+//    });
+  
+})
+      </script>
+</body>
+</html>
