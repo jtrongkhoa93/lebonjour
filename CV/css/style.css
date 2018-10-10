@@ -101,7 +101,7 @@ h2{
       left: -1000px;
       position: absolute;
       opacity: 0;
-      -shadow:  25px 25px 40px rgba(0, 0, 0, 0.7);
+      text-shadow:  25px 25px 40px rgba(0, 0, 0, 0.7);
 }
 .left-in{
       animation: left-in 0.7s ease-in-out 1 forwards, fade 0.7s linear 1 forwards;
