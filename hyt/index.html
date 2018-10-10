@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <title>ASM06 - FFSE1801011 - Khoa Do</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="banner.css">
+      <script src="app.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+      <header>
+            <nav id="nav1">
+                  <div class="nav1"><img src="images/icon-hyt.png" alt=""><a href="#">HOA YEU THUONG</a></div>
+                  <div class="nav1"><img src="images/icon-tree.png" alt=""><a href="#">CÂY MAY MẮN</a></div>
+                  <div class="nav1"><img src="images/icon-gift.png" alt=""><a href="">KẸO NGỌT</a></div>
+                  <div class="nav1"><img src="images/icon-teddy.png" alt=""><a href="">GẤU BÔNG</a></div>
+                  <ul id="account">
+                        <li><a href="#">Tài khoản &nbsp; &#9660; &nbsp;</a>|
+                              <ul>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>&nbsp;Đăng nhập hoặc tạo tài khoản mới</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>&nbsp;Kiểm tra đơn hàng</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>&nbsp;Quên mật khẩu</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>&nbsp;Câu hỏi thường gặp &#40;FAQs&#41;</a></li>
+                              </ul>
+                        </li>
+                  </ul>
+                  <div><a id="cart" href="#"><img src="images/icon-cart.png" alt="">GIỎ HÀNG</a>
+                  </div>
+                  <img src="images/flag-en.png" alt="" id="lang">
+
+            </nav>
+            <div id="branding">
+                  <img src="images/logo-hoa-yeu-thuong.png" alt="" id="logo">
+                  <div id="search"><input type="search" name="search" placeholder="Tìm sản phẩm">
+                        <button><i class="fas fa-search"></i></button></div>
+
+            </div>
+            <nav id="nav2">
+                  <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Hoa sinh nhật</a>
+                              <ul>
+                                    <li><a href="#">Sinh Nhật Ba Mẹ</a></li>
+                                    <li><a href="#">Sinh Nhật Đồng Nghiệp</a></li>
+                                    <li><a href="#">Sinh Nhật Người Yêu</a></li>
+                              </ul>
+                        </li>
+                        <li><a href="#">Chủ đề</a>
+                              <ul>
+                                    <li><a href="#">Hoa Sinh Nhật</a></li>
+                                    <li><a href="#">Hoa Tặng Mẹ</a></li>
+                                    <li><a href="#">Hoa Tình Yêu</a></li>
+                              </ul>
+                        </li>
+                        <li><a href="#">Hoa tươi</a>
+                              <ul>
+                                    <li><a href="#">Cẩm chướng</a></li>
+                                    <li><a href="#">Hoa cúc</a></li>
+                                    <li><a href="#">Hoa đồng tiền</a></li>
+                              </ul>
+                        </li>
+                        <li><a href="#">Màu sắc</a>
+                              <ul>
+                                    <li><a href="#">Màu cam</a></li>
+                                    <li><a href="#">Màu đỏ</a></li>
+                                    <li><a href="#">Màu tím</a></li>
+                              </ul>
+                        </li>
+                        <li><a href="#">Hoa đặc biệt</a>
+                              <ul>
+                                    <li><a href="#">Hoa cao cấp</a></li>
+                                    <li><a href="#">Hoa sinh viên</a></li>
+                                    <li><a href="#">Mẫu hoa mới</a></li>
+                              </ul>
+                        </li>
+                        <li><a href="#">Quà tặng kèm</a>
+                              <ul>
+                                    <li><a href="#">Bánh kem</a></li>
+                                    <li><a href="#">Socola</a></li>
+                                    <li><a href="#">Graphic</a></li>
+                              </ul>
+                        </li>
+                        <li><a href="#">Hoa cưới</a></li>
+                        <li><a href="#">Ý nghĩa hoa</a></li>
+
+                  </ul>
+            </nav>
+      </header>
+      <main>
+            <aside>
+                  <div>
+                        <span class="location">Dịch vụ điện hoa</span><br>
+                        <span class="location">63 tỉnh thành</span>
+                        <span class="location">Hoayeuthuong.com luôn cam kết đặt chất lượng hoa luôn tươi mới lên hàng đầu giao cho khách. Các mẫu hoa luôn được cắm đủ số lượng và giống kiểu dáng trên website nhất có thể.</span><br><br>
+                        <span class="location">Chọn tỉnh thành bạn muốn giao hoa tươi:</span>
+                        <select name="cities">
+                              <option value="HCM">TP. Hồ Chí Minh</option>
+                              <option value="DN">TP. Đà Nẵng</option>
+                              <option value="HN">TP. Hà Nội</option>
+                              <option value="HP">TP. Hải Phòng</option>
+                              <option value="AG">Tỉnh An Giang</option>
+                              <option value="CT">TP. Cần Thơ</option>
+                        </select>
+                  </div>
+                  <div id="menu">
+                        <ul>Danh mục hoa tươi
+                              <hr>
+                              <li><a href="#">Bó hoa tươi</a></li>
+                              <li><a href="#">Hộp hoa tươi</a></li>
+                              <li><a href="#">Giỏi hoa tươi</a></li>
+                              <li><a href="#">Bình hoa tươi</a></li>
+                              <li><a href="#">Hoa tình yêu</a></li>
+                              <li><a href="#">Hoa chúc mừng</a></li>
+                              <li><a href="#">Hoa chia buồn</a></li>
+                        </ul>
+                  </div>
+            </aside>
+            <section id="banner">
+
+                  <div id="bigban">
+                        <div id="slide_box1">
+                              <img class="slide_img1" src="images/slideshow/h1.jpg" alt="">
+                              <img class="slide_img1" src="images/slideshow/h2.jpg" alt="">
+                              <img class="slide_img1" src="images/slideshow/h3.jpg" alt="">
+                              <img class="slide_img1" src="images/slideshow/h4.jpg" alt="">
+                        </div>
+                        <div id="bannav">
+                              <div class="dots active" value="1"></div>
+                              <div class="dots" value="2"></div>
+                              <div class="dots" value="3"></div>
+                              <div class="dots" value="4"></div>
+                        </div>
+                  </div>
+
+                  <div id="smallban">
+                        <span>Hoa tươi theo mùa</span>
+                        <div class="control" id="pre" onclick="plusSlides(-2)"><i class="fas fa-chevron-left"></i></div>
+                        <div id="slide_box">
+
+                              <div id="1" class="slider fade">
+                                    <img class="slide_img" src="./images/bo1.jpg" alt="">
+                                    <a href="#">DẠ KHÚC TÌNH NHÂN CHỈ 500.000đ</a>
+                              </div>
+                              <div id="2" class="slider fade">
+                                    <img class="slide_img" src="./images/bo2.jpg" alt="">
+                                    <a href="#">SẮC MÀU HẠNH PHÚC CHỈ 500.000đ</a>
+                              </div>
+                              <div id="3" class="slider fade">
+                                    <img class="slide_img" src="./images/bo3.jpg" alt="">
+                                    <a href="#">KHÚC TỰ TÌNH CHỈ 500.000đ</a>
+                              </div>
+                              <div id="4" class="slider fade">
+                                    <img class="slide_img" src="./images/bo4.jpg" alt="">
+                                    <a href="#">PHÚT YÊU ĐẦU 2 CHỈ 350.000đ</a>
+                              </div>
+                              <div id="5" class="slider fade">
+                                    <img class="slide_img" src="./images/bo5.jpg" alt="">
+                                    <a href="#">PRETTY GIRL CHỈ 450.000đ</a>
+                              </div>
+                              <div id="6" class="slider fade">
+                                    <img class="slide_img" src="./images/bo6.jpg" alt="">
+                                    <a href="#">SỰ QUYẾT TÂM CHỈ 500.000đ</a>
+                              </div>
+
+                        </div>
+                        <div class="control" id="nxt" onclick="plusSlides(2)"><i class="fas fa-chevron-right"></i></div>
+
+                  </div>
+
+            </section>
+            <footer>
+                  <div id="hotline">
+                        <h4>Hotline 24/7</h4>
+                        Miền nam: <span class="tel">028 73002010</span><br>
+                        Miền bắc: <span class="tel"> 024 73002010</span><br>
+                        Zalo/Viber: <span class="tel">0123456 9301</span>
+                        <a href="#">Đặt hoa qua điện thoại</a>
+                  </div>
+
+                  <div id="bank"></div>
+                  <div id="quote">
+                        <h4>Tư vấn chọn hoa tươi</h4>
+                        <form id="submit" action="submit">
+                              <label for="topics" class="topics">Chủ đề</label>
+                              <label for="price" class="price">Mức giá</label><br>
+                              <select name="topics" class="topics">
+                                    <option value="">Tất cả</option>
+                                    <option value="">Hoa sinh nhật</option>
+                                    <option value="">Hoa tình yêu</option>
+                                    <option value="">Hoa chúc sức khỏe</option>
+
+                              </select>
+
+                              <select name="price" class="price">
+                                    <option value="">Tất cả</option>
+                                    <option value="">Dưới 250.000đ</option>
+                                    <option value="">Giá từ 250.000đ - 350.000đ</option>
+                                    <option value="">Giá từ 350.000đ - 450.000đ</option>
+                                    <option value="">Giá từ 450.000đ - 550.000đ</option>
+                              </select>
+                              <button type="submit" onclick="return false">Click</button>
+                              <p>* Bạn có thể gọi nhanh cho chúng tôi theo số <span>0123456 9301</span> để đặt hoa theo thiết kế riêng</p>
+                        </form>
+                  </div>
+            </footer>
+      </main>
+      <div id="up"><a href="#nav1">&#9650;<br><span>Up</span></a></div>
+<script>
+      var a = 1;
+      var b = 2;
+
+      showSlides(a, b);
+      
+      function plusSlides(k) {
+            showSlides(a += k, b += k);
+      }
+
+      function showSlides(n, m) {
+            var i;
+            var sliders = document.getElementsByClassName("slider");
+
+            if (n > sliders.length) {
+                  a = 1;
+                  b = 2;
+            }
+            if (m < 1) {
+                  a = sliders.length - 1;
+                  b = sliders.length;
+            }
+                        console.log(a);
+                        console.log(b);
+            for (i = 0; i < sliders.length; i++) {
+                  sliders[i].style.display = "none";
+            }
+
+            sliders[a - 1].style.display = "inline-block";
+            sliders[b - 1].style.display = "inline-block";
+      }
+
+
+</script>
+</body>
+
+</html>

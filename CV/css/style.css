@@ -59,9 +59,6 @@ aside {
 
 }
 
-h2{
-      font-size: 4rem;
-}
 i{
       font-size: 2rem;
       transition: font-size 0.5s ease-in-out, height 0.5s linear, color 0.7s linear;
@@ -78,14 +75,19 @@ i{
       filter: blur(1.4px)
 
 }
+
 .scroll{
-      width: 87%;
-      margin-left: 20px;
+      width: 1200px;
+      height: 700px;
+      margin-left: 200px;
       margin-top: 100px;
       border: 1px solid gray;
-      float: right;
+      float: left;
       position: relative;
       padding-top: 100px;
+      display: block;
+      background:none;
+      overflow: hidden;
       
 }
 /*
@@ -93,15 +95,42 @@ i{
       display:none;
 }
 */
+
+h2{
+      font-size: 4rem;
+      left: -1000px;
+      position: absolute;
+      opacity: 0;
+      -shadow:  25px 25px 40px rgba(0, 0, 0, 0.7);
+}
+.left-in{
+      animation: left-in 0.7s ease-in-out 1 forwards, fade 0.7s linear 1 forwards;
+}
+@keyframes left-in {
+      from {left: -1000px;
+      opacity:0}
+      to {left: 0px;
+      opacity:1}
+}
+.right-in{
+      animation: right-in 0.7s ease-in-out 1 forwards;
+}
+@keyframes right-in {
+      from {right: -500px;
+      opacity:0}
+      to {right: 0px;
+      opacity:1}
+}
 .scroll img{
-      width: 60%;
-      float:right;
+
       width: 100vh;
       height: 70vh;
-      margin-right: 100px;
+      position: absolute;
       box-shadow:  25px 25px 40px rgba(0, 0, 0, 0.7);
+      top: 300px;
+      right: -500px;
+      opacity: 0;
 }
-
 
 /*Animation*/
 .glow:hover, .active {
