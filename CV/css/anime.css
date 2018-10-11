@@ -1,0 +1,81 @@
+/*Elements animation*/
+
+.left-in{
+      animation: left-in 0.7s ease-in-out 1 forwards, fade 0.7s linear 1 forwards;
+}
+@keyframes left-in {
+      from {margin-left: -500px}
+      to {margin-left: 100px}
+}
+.right-in{
+      animation: right-in 0.7s ease-in-out 1 forwards,fade 0.7s linear 1 forwards;
+}
+@keyframes right-in {
+      from {right: -500px}
+      to {right: 0px}
+}
+.bottom-up{
+      animation: bottom-up 0.7s ease-in-out 1 forwards,fade 0.7s linear 1 forwards;
+}
+@keyframes bottom-up {
+      from {bottom: -500px}
+      to {right: 0px}
+}
+.top-down{
+      animation: top-down 0.7s ease-in-out 1 forwards,fade 0.7s linear 1 forwards;
+}
+@keyframes top-down {
+      from {top: -500px}
+      to {top: 0px}
+}
+
+@keyframes fade {
+      from {opacity: 0}
+      to {opacity:1}
+}
+/*Home banner animation*/
+
+@keyframes anime {
+      0% {            left: 0;      }
+      35% {            left: 0;      }
+      40% {            left: -100%;      }
+      65% {            left: -100%;      }
+      70% {            left: -200%;      }
+      95% {            left: -200%;      }
+      100% {            left: 0%;      }
+}
+@keyframes anime1 {
+      0% {            left: 0;      }
+      20% {            left: 0;      }
+      100% {            left: 0;      }
+}
+
+@keyframes anime2 {
+      0% {            left: 0;      }
+      20% {            left: -100%;      }
+      100% {            left: -100%;      }
+}
+
+@keyframes anime3 {
+      0% {            left: 0;      }
+      20% {            left: -200%;      }
+      100% {            left: -200%;      }
+}
+
+/*Navbar Glow Animation*/
+.glow:hover, .nav>.active {
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+      font-size: 60px;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
