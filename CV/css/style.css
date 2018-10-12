@@ -11,11 +11,18 @@
     font-family: myFirstFont;
     src: url(../fonts/Futura-Medium.woff);
 }
+/*
 body, html{
       height:4400px;
       overflow: hidden;
 }
+*/
 
+/*
+html{
+      scroll-behavior: smooth;
+}
+*/
 a, ul{
       text-decoration: none;
       color: inherit;
@@ -25,14 +32,12 @@ a, ul{
     clear: both;
     display: table;
 }
-.active{
-      color: red;
-}
+
 header{
-      top: 20px;
+      top: 0.1vw;
       position: fixed;
       font-size: 0.5rem;
-      margin: 20px;
+      margin: 1vw 2vw;
 }
 #menu, #up{      
       width: 50px;
@@ -40,7 +45,8 @@ header{
       right: 5%;
       cursor:pointer;
       transition: box-shadow 0.2s ease-in-out;
-      z-index: 99;
+
+/*      display:none;*/
 }
 
 #menu:hover, #up:hover{
@@ -49,9 +55,11 @@ header{
 
 #menu{
       top: 10%;
+      z-index:-1;
 }
 #up{
       top: 85%;
+      z-index:99;
 }
 #background{
       background-image:url(../images/Quotefancy-16645-3840x2160.jpg);
@@ -66,7 +74,7 @@ header{
 /*Navigation*/
 
 aside {
-      width: 100px;
+      width: 10vw;
       position: fixed;
       display: flex;
       text-align: center;
@@ -98,10 +106,10 @@ i{
 
 .scroll{
       width: 80%;
-      height: 85vh;
-      margin-top: 100px;
-      margin-left: 150px;
-      padding-top: 80px;
+      height: 90vh;
+      margin-top: 4vw;
+      margin-left: 12vw;
+      padding-top: 4vw;
       border: 1px solid gray;
       float: left;
       position: relative;
@@ -111,14 +119,13 @@ i{
 }
 
 h2{
-      font-size: 5vw;
-      margin-left: -500px;
-      opacity: 0;
+      font-size: 4vw;
+      padding-left: 1vw;
       text-shadow:  25px 25px 40px rgba(0, 0, 0, 0.7);
 }
 h3{
-      height: 80px;
-      line-height: 80px;
+      height: 6vw;
+      line-height: 6vw;
       font-size: 3vw;
       text-shadow:  25px 25px 40px rgba(0, 0, 0, 0.7);
 }
@@ -133,64 +140,21 @@ h3{
 }
 /*Home*/
 
-/*--Banner--*/
 
-#bigban {
-      position: relative;
-      margin: 0;
-      width: 100%;
-      height: 100%;
-      padding: 0;
-      overflow: hidden;
-}
-
-#slide_box1 {
-      width: 400%;
-      height: 100vh;
-      padding: 0;
-      margin: 0 !important;
-      box-sizing: border-box;
-}
 
 .slide_img1 {
-      width: 25%;
+      width: 100%;
       height: auto;
       float: left;
 }
 .slide_img1 span{
       width: 40%;
-      margin: 3% auto auto 5%;
+      margin: 10% auto auto 5%;
       display: flex;
       flex-wrap: wrap;
-      font-size: 3.5vw;
+      font-size: 3vw;
 }
 
-#bannav {
-      width: 100%;
-      height: 10px;
-      position: absolute;
-      margin: 85% auto 15%;
-      text-align: center;
-      z-index: 98;
-      bottom: -100px;
-}
-
-.dots {
-      top: -5px;
-      width: 20px;
-      height: 20px;
-      margin: 0 20px;
-      border-radius: 50%;
-      display: inline-block;
-      background: rgba(0, 0, 0, 0.6);
-      cursor: pointer;
-      z-index: 99;
-}
-
-#bannav>.active,
-.dots:hover {
-      background-color: #bd2026;
-}
 #home{
       position: relative;
 }
@@ -231,7 +195,7 @@ h3{
 }
 #edu-center .stripe{
       margin: 0.6vw auto;
-      height: 1.2vw;
+      height: 1vw;
 }
 #edu-left, #edu-right{
       width: 100%;
@@ -246,12 +210,10 @@ h3{
 #edu-left span{
       text-align: right;
 }
-#edu-right span{
-      font-size: 1.3vw;
-}
+
 #edu-left span, #edu-right span{
-      width: 95%;
-      height: 5.7vw;
+      width: 100%;
+      height: 5.5vw;
       font-size: 1.3vw;
       transition: box-shadow 0.2s ease-in-out;
 }
@@ -260,8 +222,8 @@ h3{
 
 #s-w{
       display: flex;
-      margin-bottom: 30px;
-      height: 40%;
+      margin-bottom: 1.5vw;
+      height: 15vw;
       
 }
 #s-w .stripe{
@@ -269,11 +231,13 @@ h3{
       margin: 0 2%;
 }
 #s-w h3{
-      margin: 20px 0;
+      margin: 0 0 1.5vw 0;
+      height: 3vw;
+      line-height: 3vw;
 }
 #s-w>div div{
-      font-size: 20px;
-      height:30px;
+      font-size: 1.5vw;
+      height: 2vw;
 }
 #strength{
       text-align: right;
@@ -284,8 +248,8 @@ h3{
 }
 #graph{
       width: 80%;
-      height: 7vh;
-      margin: 5px auto;
+      height: 3vw;
+      margin: 1vw auto;
       display: grid;
       grid-template-columns: 30% 70%;
       justify-content: space-around;
@@ -293,8 +257,8 @@ h3{
 }
 #graph p{
       width: 100%;
-      height: 7vh;
-      line-height: 7vh;
+      height: 3vw;
+      line-height: 3vw;
       font-size: 1.1vw;
       font-weight: bold;
       padding: auto 0;
@@ -349,7 +313,7 @@ h3{
 
 }
 #tech>div{
-      height:12vh;
+      height:9vh;
       width: 100%;
       background-repeat:no-repeat; background-position: center center; background-color: rgba(248,248,248,0.3);
       background-size: 50% auto;
@@ -359,10 +323,11 @@ h3{
 }
 #tech>div:hover{
       filter: none;
-      background-size: 80% auto;
+      background-size: 60% auto;
 }
 #experience h3{
       text-align: center;
+      font-size: 2vw;
 }
 #tech img{
       height: 10vh;
@@ -441,7 +406,8 @@ form{
       background-size: cover;
       padding: 4vh 0 3vh 2vw;
       width: 100%;
-      height: auto;  
+      height: auto;
+      margin-top: 1vw;
 }
 input{
       height: 4vh;
@@ -484,14 +450,14 @@ button{
 }
 .contacts img{
       position: absolute;
-      width: 20% !important;
+      width: 15% !important;
       height: auto;
-      margin: 5% 0;
+      margin: 5% 5%;
       
 }
 .contacts a{
       position: absolute;
-      top: 40%;
+      top: 30%;
       left: 30%;
       height: 20%;
 /*
@@ -507,7 +473,7 @@ form p, form input{
 
 /*Responsive*/
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-device-width: 780px) {
       aside {
             left:auto;
             right:10%;
@@ -515,7 +481,121 @@ form p, form input{
             width: 20px;
       }
       #menu{
-            display: none;
+            z-index: 99 !important;
             }
+      .scroll{
+            margin-left: 6vw;
+            height: 90vh;
+            
+      }
+      h2{
+            font-size: 8vw;
+      }
+      h3{
+            font-size: 5vw;
+/*            margin: 10px 0;*/
+      }
+      #home{
+ 
+            width: 100%;
+      }
+      .slide_img1{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+      } 
+      .slide_img1 span{
+            width: 80%;
+            font-size: 5vw;
+      }
+      #home img{
+            width: 80%;
+            position: relative;
+            top: 50%;  
+            margin-top: 10vh;
+      }
+      #edu-container{
+            display: block;
+            position: relative;
+            height: 500px;
+            z-index: 99;
+      }
+      #edu-container .stripe{
+            display:none;
+      }
+      .period{
+            width: 30%;
+            height: 7vh;
+            padding: 20px auto 0;
+            font-size: 2.5vw;
+            text-align: center;
+            margin: 10px 0;
+            box-sizing: border-box;
+
+      }
+      #edu-center{
+
+            position: absolute;
+      }
       
-}
+      #edu-left{
+            align-items: flex-start;
+            top: 5vw;
+            left: 24vw;
+            position: absolute;   
+      }
+      #edu-right{
+            top: 6vw;
+            left: 24vw;
+            position: absolute;
+
+      }
+      #edu-left span{
+            text-align: left;
+      }
+
+      #edu-left span, #edu-right span{
+            font-size: 1.7vh;
+            height: 10vw;
+            width: 70%;
+      }
+      #s-w{
+            flex-direction: column
+      }
+      #strength, #weakness{
+            text-align: left;
+            padding: 20px;
+      }
+      #graph{
+            margin: 300px 0 0 20px;
+      }
+      #graph p{
+            font-size: 2vw;
+      }
+      #tech{
+           grid-template-columns: 48% 48%;
+            grid-template-rows: auto auto; 
+      }
+      .project{
+            width: 30%;
+            height: 25vh;
+      }
+      form{
+            width: 100%;
+           margin: 0 auto; 
+
+      }
+      input, #message{
+            width: 70%;
+            margin: 5px auto; 
+      }
+      button{
+            width: 70%;
+            height: 5vh;
+            font-size: 1.8rem;
+      }
+      
+      
+      
+      
+}      

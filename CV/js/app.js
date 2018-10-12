@@ -9,24 +9,24 @@ window.onload = function () {
             });
       }
 
-      var pos = 1;
-      var id = setInterval(frame, 2500);
+//      var pos = 1;
+//      var id = setInterval(frame, 2500);
 
-      function frame() {
-
-
-            if (pos > 3) {
-                  pos = 0;
-                  dots[3].className = dots[3].className.replace(" current", "");
-                  dots[pos].className += " current";
-                  pos++;
-            } else {
-                  dots[pos - 1].className = dots[pos - 1].className.replace(" current", "");
-                  dots[pos].className += " current";
-
-                  pos++;
-            }
-      }
+//      function frame() {
+//
+//
+//            if (pos > 3) {
+//                  pos = 0;
+//                  dots[3].className = dots[3].className.replace(" current", "");
+//                  dots[pos].className += " current";
+//                  pos++;
+//            } else {
+//                  dots[pos - 1].className = dots[pos - 1].className.replace(" current", "");
+//                  dots[pos].className += " current";
+//
+//                  pos++;
+//            }
+//      }
 
 
       slideshow();
