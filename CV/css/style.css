@@ -511,12 +511,10 @@ form p, form input{
 /*            margin-top: 10vh;*/
       }
       #strength .h3{
-            
-            line-height: 10vh;
+             line-height: 10vh;
             margin: 2vh 0;
       }
       #home{
- 
             width: 100%;
       }
       .slide_img1{
@@ -586,13 +584,15 @@ form p, form input{
       #s-w>div div{
             font-size: 4vw;
             height: 5vw;
+            width: 100%;
       }
       #strength, #weakness{
             text-align: left;
             padding: 20px;
+            width: 100%;
       }
       #graph{
-            margin: 45vh 0 0 20px;
+            margin: 40vh 0 0 20px;
       }
       #graph p{
             margin: 2vh 0;
@@ -628,4 +628,4 @@ form p, form input{
             font-size: 1.8rem;
       }
 
-}      
+}
