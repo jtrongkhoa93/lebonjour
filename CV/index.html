@@ -94,7 +94,9 @@
             </h2>
             <div id="s-w">
                   <div id="strength">
-                        <h3>Strengths</h3>
+                        <div class="h3">
+                              <h3>Strengths</h3>
+                        </div>
                         <div>Honesty</div>
                         <div>Open-minded</div>
                         <div>Perseverance </div>
@@ -103,7 +105,9 @@
                   </div>
                   <div class="stripe"></div>
                   <div id="weakness">
-                        <h3>Weaknesses</h3>
+                        <div class="h3">
+                              <h3>Weaknesses</h3>
+                        </div>
                         <div>Forgetfulness</div>
                         <div>Time management</div>
                         <div>Emotional thinking</div>
@@ -140,7 +144,9 @@
             <h2 class="title">
                   My Projects
             </h2>
-            <h3>What I am good at</h3>
+            <div class="h3">
+                  <h3>What I am good at</h3>
+            </div>
             <div id="tech">
 
                   <div style="background-image: url(images/35-copy.png)"></div>
@@ -153,7 +159,7 @@
                   <div style="background-image: url(images/angularjs.png)"></div>
 
             </div>
-            <h3>My Projects</h3>
+            <div class="h3"></div> <h3>My Projects</h3>
             <div id="projects">
                   <div class="project" id="project1">
                         <div class="zoom"><img src="images/zoom-in%20(1).png" alt=""></div>
@@ -201,7 +207,7 @@
             $(document).ready(function() {
                   $('body,html').scrollTop(0);
                   var scrollLink = $('.nav');
-
+                  var flag='home', flagOld='home'
                   // Smooth scrolling
                   scrollLink.click(function(e) {
                         e.preventDefault();
@@ -217,19 +223,47 @@
                         scrollLink.each(function() {
 
                               var sectionOffset = $(this.hash).offset().top - 20;
-                              console.log(this)
-                              console.log($(this).parent())
+//                              console.log($(this.hash).attr('id'))
+//                              console.log($(this).parent())
                               if (sectionOffset <= scrollbarLocation + 300) {
                                     $(this).children().first().addClass('active');
                                     $(this).siblings().children().removeClass('active');
+                                    flag=$(this.hash).attr('id');
+                                    
                               }
                         })
+                        console.log(flag);
 
                         if (scrollbarLocation > 500) {
                               $("#up").show(300);
                         } else {
                               $("#up").hide(300);
                         }
+                        
+                        if (flag!=flagOld){
+                        animation();
+                        flag=flagOld
+                        }
+                        
+//                        function animation() {
+////                        let flagId = flag.replace("#", ""),
+//                             var scrollChild = document.getElementById(flag).childNodes;
+////                              console.log(flagId);
+//                              console.log(scrollChild);
+//                        for (var i = 0; i < scrollChild.length; i++) {
+//                              if ((scrollChild[i].className != undefined) && (scrollChild[i].className != "")) {
+//                                    //            console.log(scrollChild[i].tagName);      
+//                                    if (scrollChild[i].tagName == 'H2'){
+//                                          //                  console.log(scrollChild[i].className);
+//                                          scrollChild[i].classList.remove('left-in');
+//                                          void scrollChild[i].offsetWidth;
+//                                          scrollChild[i].classList.add('left-in');
+//                                    }
+//
+//                              }
+//
+//                        }
+//                  }
                   })
 
                   var menu = document.getElementById("menu");

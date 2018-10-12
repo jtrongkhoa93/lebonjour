@@ -125,7 +125,7 @@ i{
 
 h2{
       font-size: 4vw;
-      padding-left: 1vw;
+      margin-left: 50px;
       text-shadow:  25px 25px 40px rgba(0, 0, 0, 0.7);
 }
 h3{
@@ -137,11 +137,12 @@ h3{
 .scroll>img{
 
       filter: grayscale(100%);
-      transition: filter 0.3s linear, box-shadow 0.3s ease-in-out;
+      transition: filter 0.3s linear, box-shadow 0.3s ease-in-out, transform .3s ease-in-out;
 }
 .scroll img:hover{
       filter:none;
       box-shadow:  25px 25px 40px rgba(0, 0, 0, 0.7);
+      transform: scale(1.03);
 }
 /*Home*/
 
@@ -168,7 +169,7 @@ h3{
       height: auto;
       position: absolute;
       top: 250px;
-      right: 0;
+      right: 3vw;
       opacity: 1;
 /*      z-index: 99;*/
 }
@@ -240,6 +241,8 @@ h3{
       height: 3vw;
       line-height: 3vw;
 }
+#s-w .h3{
+      margin: 30px 0;}
 #s-w>div div{
       font-size: 1.5vw;
       height: 2vw;
@@ -488,20 +491,29 @@ form p, form input{
             display: none;
             width: 20px;
       }
+      i {
+            font-size: 3rem;
+      }
       #menu{
-            z-index: 99 !important;
+            z-index: 99;
             }
       .scroll{
             margin-left: 6vw;
             height: 90vh;
+            border-top: 8px solid rgba(0, 0, 0, 0.4);
             
       }
       h2{
-            font-size: 8vw;
+            font-size: 10vw;
       }
       h3{
-            font-size: 5vw;
-/*            margin: 10px 0;*/
+            font-size: 4vh;
+/*            margin-top: 10vh;*/
+      }
+      #strength .h3{
+            
+            line-height: 10vh;
+            margin: 2vh 0;
       }
       #home{
  
@@ -536,7 +548,7 @@ form p, form input{
             width: 30%;
             height: 13vw;            
             padding: 20px auto 0;
-            font-size: 2.5vw;
+            font-size: 3.5vw;
             text-align: center;
             margin: 2vw 0;
             box-sizing: border-box;
@@ -551,8 +563,7 @@ form p, form input{
             align-items: flex-start;
             top: 7vw;
             left: 24vw;
-            position: absolute;   
-            
+            position: absolute;    
       }
       #edu-right{
             top: 6vw;
@@ -565,22 +576,27 @@ form p, form input{
       }
 
       #edu-left span, #edu-right span{
-            font-size: 1.7vh;
+            font-size: 1.8vh;
             height: 15vw;
             width: 70%;
       }
       #s-w{
             flex-direction: column
       }
+      #s-w>div div{
+            font-size: 4vw;
+            height: 5vw;
+      }
       #strength, #weakness{
             text-align: left;
             padding: 20px;
       }
       #graph{
-            margin: 300px 0 0 20px;
+            margin: 45vh 0 0 20px;
       }
       #graph p{
-            font-size: 2vw;
+            margin: 2vh 0;
+            font-size: 2.5vw;
       }
       #tech{
            grid-template-columns: 48% 48%;
@@ -590,6 +606,13 @@ form p, form input{
             width: 30%;
             height: 25vh;
       }
+      #experience h3{
+            text-align: center;
+            font-size: 5vw;
+            height: 8vh;
+            line-height: 8vh;
+      }      
+      
       form{
             width: 100%;
            margin: 0 auto; 
