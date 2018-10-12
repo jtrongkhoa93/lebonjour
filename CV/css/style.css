@@ -109,12 +109,18 @@ i{
       margin-top: 4vw;
       margin-left: 12vw;
       padding-top: 4vw;
-
       float: left;
       position: relative;
       display: block;
       background:none;
       overflow: hidden;
+      border-top: 2px solid rgba(0, 0, 0, 0.7);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+}
+
+.scroll:nth-child(6){
+      border-top: none;
+      box-shadow: none;
 }
 
 h2{
@@ -407,6 +413,7 @@ form{
       width: 100%;
       height: auto;
       margin-top: 1vw;
+      
 }
 input{
       height: 4vh;
@@ -414,10 +421,12 @@ input{
       margin: 10px 0; 
       outline: none;
       letter-spacing: 1px;
+      color: black;
 }
 #message{
       height: 12vh;
       width: 40%;
+      color: black;
 }
 button{
       width: 100px;
