@@ -2,7 +2,6 @@
 *{
       padding: 0;
       margin:0;
-/*      border: 1px solid gray;*/
       font-family: myFirstFont, sans-serif;
       letter-spacing: 5px;
       color: white;
@@ -110,7 +109,7 @@ i{
       margin-top: 4vw;
       margin-left: 12vw;
       padding-top: 4vw;
-      border: 1px solid gray;
+
       float: left;
       position: relative;
       display: block;
@@ -524,12 +523,13 @@ form p, form input{
             display:none;
       }
       .period{
+            
             width: 30%;
-            height: 7vh;
+            height: 13vw;            
             padding: 20px auto 0;
             font-size: 2.5vw;
             text-align: center;
-            margin: 10px 0;
+            margin: 2vw 0;
             box-sizing: border-box;
 
       }
@@ -540,9 +540,10 @@ form p, form input{
       
       #edu-left{
             align-items: flex-start;
-            top: 5vw;
+            top: 7vw;
             left: 24vw;
             position: absolute;   
+            
       }
       #edu-right{
             top: 6vw;
@@ -556,7 +557,7 @@ form p, form input{
 
       #edu-left span, #edu-right span{
             font-size: 1.7vh;
-            height: 10vw;
+            height: 15vw;
             width: 70%;
       }
       #s-w{
@@ -594,8 +595,5 @@ form p, form input{
             height: 5vh;
             font-size: 1.8rem;
       }
-      
-      
-      
-      
+
 }      
