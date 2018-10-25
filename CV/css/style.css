@@ -98,18 +98,19 @@ i{
       -webkit-transition: font-size 0.5s ease-in-out, height 0.5s linear, color 0.7s linear;
       transition: font-size 0.5s ease-in-out, height 0.5s linear, color 0.7s linear;
       color: #f8f8f8;
-      text-shadow: 0 0 10px #0095ff;
+      text-shadow: 3px 3px 10px black;
 }
 
 .stripe{
-      border: 2px #cecece solid;
-      width: 0;
-      height: 30px;
-      -webkit-box-shadow: 0 0 20px #0095ff;
-              box-shadow: 0 0 20px #0095ff;
-      margin: 20px auto;
-      -webkit-filter: blur(1.4px);
-              filter: blur(1.4px)
+/*      border-bottom: 1px black solid;*/
+      width: 30px;
+      height: 2px;
+      margin: 30px auto;
+      box-shadow: 0 0.5px 0 rgba(255, 255, 255, .5) inset;
+      &.-vertical{
+            width: 0;
+            height: 30px;
+      }
 
 }
 
@@ -434,14 +435,17 @@ h3{
       background-image:url(../images/newszing.PNG);
       background-size:contain;
       background-position: top center;
+      background-repeat: no-repeat;
 }#project2{
       background-image:url(../images/hyt.PNG);
       background-size:cover;
       background-position: top center;
+      background-repeat: no-repeat;
 }#project3{
       background-image:url(../images/a-smart.PNG);
       background-size:cover;
       background-position: top center;
+      background-repeat: no-repeat;
 }
 .project a{
       width: 100%;

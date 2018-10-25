@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+      <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+      <script>
+            var json=[
+                  {
+                        id:1,
+                        name:"Khoa",
+                        sex:true
+                  },
+                {
+                      id:2,
+                      name:"Tu",
+                      sex:true
+                },
+                {
+                      id:3,
+                      name:"Vu",
+                      sex:true
+                },
+                  {
+                        id:4,
+                        name:"An",
+                        sex:false
+                  }
+                
+            ]
+            var jsonDat = JSON.stringify(json);
+//            for (let i=0; i<json.length;i++){
+//                     console.log(json[i])
+////                        document.write('retrievedObject: ' + json[i]);
+////                        document.write("<br>");
+//                  }
+            if (typeof(Storage) !== "undefined") {
+                localStorage.setItem("sinhvien",jsonDat);
+
+                  var retrievedArray = JSON.parse(localStorage.getItem('sinhvien'));
+                 
+                  for (var i=0; i<retrievedArray.length;i++){
+                     
+//                        document.write('retrievedObject: ' + retrievedArray[i]);
+//                        document.write("<br>");
+                        console.log(retrievedArray[i])
+                  }
+                  
+            } else {
+                document.write("Sorry! No Web Storage support..");
+            }
+
+      </script>
+      <div>
+            <h1>Hello World!</h1>
+      </div>
+</body>
+</html>
