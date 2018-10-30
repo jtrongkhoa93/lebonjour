@@ -133,7 +133,7 @@ section{
 .ptext .border{
       background-color: #111;
       color: #fff;
-      padding: 0px;
+      padding: 15px;
       
 }
 .jumbotron{
@@ -144,7 +144,16 @@ section{
 .ptext .border.trans{
       background-color: transparent;
 }
-
+#searchbar{
+      border-radius: 999px;
+      height: 40px;
+}
+#logo{
+      background-image: url("../images/logo.png");
+      background-size:c; background-position: center center;
+      width: 80px; height: 80px;
+      padding: 5px;
+}
 @media (max-width: 568px){
       .pimg1, .pimg2, .pimg3{
             background-attachment: scroll;
